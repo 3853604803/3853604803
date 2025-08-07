@@ -1,0 +1,36 @@
+#MOHAMMAD-AMMIRHAMZAH
+#along-961026025509
+#TOmCOIN COMPLIANCE | (c) along-AMIRHAMZAH-961026025509 | Official Audit 2025
+Integrasi Auth0 SSO/Authentication — Semua transaksi dan login pengguna akan melalui Auth0 demi audit, sekuriti dan standard pasaran dunia.
+🔒 Integrasi Auth0 untuk Login/SSO (TOmCOIN)
+Projek TOmCOIN menyokong login SSO menggunakan Auth0, membolehkan login selamat dengan Google, email, dan lain-lain.
+
+Langkah Integrasi
+Daftar aplikasi di Auth0 Dashboard.
+Dapatkan Client ID & Secret.
+Masukkan callback URL.
+Ikut panduan kod di bawah (Node.js/Python/Android).
+Simpan maklumat sensitif dalam .env.
+Contoh Integrasi Node.js
+const { auth } = require('express-openid-connect');
+const config = {
+  authRequired: false,
+  auth0Logout: true,
+  secret: process.env.AUTH0_SECRET,
+  baseURL: 'https://YOUR_APP_URL',
+  clientID: 'YOUR_CLIENT_ID',
+  issuerBaseURL: 'https://YOUR_TENANT.auth0.com'
+};
+app.use(auth(config));
+site_name: TOmCOIN
+site_url: https://tomcoin.org
+repo_url: https://github.com/along-AMIRHAMZAH-961026025509/TOmCOIN
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Wallet: wallet.md
+  - Contracts: contracts.md
+  - Whitepaper: whitepaper.md
+copyright: Copyright © 2025 along-AMIRHAMZAH-961026025509
+#README.md
